@@ -1,22 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import * as styles from '../styles';
 
 const Navigation = () => {
-    return (
-        <div>
-            <Link to="/" className="nav">
-                Home
-            </Link>
-            <Link to="/m1" className="nav">
-                Member One
-            </Link>
-            <Link to="/m2" className="nav">
-                Member Two
-            </Link>
-
-        </div>
-    )
-}
+  return (
+    <div>
+      <ul>
+        <Link to='/' style={styles.styles}>
+          Home
+        </Link>
+        <Link to='/m1' style={styles.styles}>
+          Abhishek
+        </Link>
+        <Link to='/m2' style={styles.styles}>
+          Adeeb
+        </Link>
+      </ul>
+    </div>
+  );
+};
 
 export default Navigation;
